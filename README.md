@@ -1,2 +1,3 @@
-# nove-common
-common files for nove.io
+# nove-shared
+
+Shared fixtures and constants for Nove.io
