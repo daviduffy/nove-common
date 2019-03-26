@@ -70,9 +70,16 @@ const defaultInputs = {
   row,
   message
 };
-const defaultOrder = [
+const base = [
   { id: 'name' },
-  { id: 'email' },
+  { id: 'email' }
+];
+const mini = [
+  ...base,
+  { id: 'message' }
+];
+const full = [
+  ...base,
   { id: 'type' },
   { id: 'eventDate' },
   { id: 'referralSource' },
@@ -88,7 +95,11 @@ const defaultOrder = [
 
 module.exports = {
   defaultInputs,
-  defaultOrder,
+  order: {
+    base,
+    mini,
+    full
+  },
   name,
   email,
   type,
