@@ -1,5 +1,5 @@
-const states = require('./states.js');
-const eventTypes = require('./eventTypes.js');
+const { STATES } = require('./states.js');
+const { EVENT_TYPES_COMMON } = require('./eventTypes.js');
 
 const name = {
   label: 'Name',
@@ -14,7 +14,7 @@ const type = {
   label: 'Event Type',
   placeholder: 'Choose an event type',
   type: 'select',
-  options: eventTypes
+  options: EVENT_TYPES_COMMON
 };
 const eventDate = {
   label: 'Event Date',
@@ -33,7 +33,7 @@ const eventLocale = {
   label: 'Event Location',
   placeholder: 'Choose a state',
   type: 'select',
-  options: states
+  options: STATES
 };
 const phone = {
   label: 'Phone',
