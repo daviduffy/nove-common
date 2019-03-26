@@ -1,6 +1,20 @@
-module.exports.eventTypes = [
+const EVENT_TYPES_COMMON = [
   'ENGAGEMENT',
   'WEDDING',
   'FAMILY',
   'SENIOR'
 ];
+
+const EVENT_TYPES_ALL = [
+  ...EVENT_TYPES_COMMON,
+  'ELOPEMENT',
+  'MATERNITY',
+  'NEWBORN',
+  'COMMERCIAL'
+];
+
+module.exports = {
+  EVENT_TYPES_COMMON,
+  EVENT_TYPES_ALL,
+  eventTypes: EVENT_TYPES_COMMON
+};

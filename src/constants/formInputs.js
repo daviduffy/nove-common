@@ -56,7 +56,7 @@ const message = {
   placeholder: 'What are the details of your event?',
   type: 'textarea'
 };
-const defaultInputs = {
+const FORM_INPUTS_DEFAULT = {
   name,
   email,
   type,
@@ -70,16 +70,16 @@ const defaultInputs = {
   row,
   message
 };
-const base = [
+const BASE = [
   { id: 'name' },
   { id: 'email' }
 ];
-const mini = [
-  ...base,
+const MINI = [
+  ...BASE,
   { id: 'message' }
 ];
-const full = [
-  ...base,
+const FULL = [
+  ...BASE,
   { id: 'type' },
   { id: 'eventDate' },
   { id: 'referralSource' },
@@ -94,11 +94,11 @@ const full = [
 ];
 
 module.exports = {
-  defaultInputs,
-  order: {
-    base,
-    mini,
-    full
+  FORM_INPUTS_DEFAULT,
+  FORM_ORDER: {
+    BASE,
+    MINI,
+    FULL
   },
   name,
   email,
