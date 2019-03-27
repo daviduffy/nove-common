@@ -1,62 +1,62 @@
-const { STATES } = require('./states.js');
-const { EVENT_TYPES_COMMON } = require('./eventTypes.js');
+var { STATES } = require('./states.js');
+var { EVENT_TYPES_COMMON } = require('./eventTypes.js');
 
-const name = {
+var name = {
   label: 'Name',
   placeholder: 'Your name'
 };
-const email = {
+var email = {
   label: 'Email',
   placeholder: 'your@email.com',
   type: 'email'
 };
-const type = {
+var type = {
   label: 'Event Type',
   placeholder: 'Choose an event type',
   type: 'select',
   options: EVENT_TYPES_COMMON
 };
-const eventDate = {
+var eventDate = {
   label: 'Event Date',
   placeholder: 'On or around',
   type: 'date'
 };
-const referralSource = {
+var referralSource = {
   label: 'Referral Source',
   placeholder: 'Where did you hear about me?'
 };
-const eventVenue = {
+var eventVenue = {
   label: 'Event Venue',
   placeholder: 'Name of the venue'
 };
-const eventLocale = {
+var eventLocale = {
   label: 'Event Location',
   placeholder: 'Choose a state',
   type: 'select',
   options: STATES
 };
-const phone = {
+var phone = {
   label: 'Phone',
   placeholder: '(###) ###-####',
   type: 'phone',
 };
-const budget = {
+var budget = {
   label: 'Estimated budget',
   placeholder: '$XXXX',
   type: 'currency',
 };
-const drawer = {
+var drawer = {
   label: 'More Details',
   placeholder: 'Share more details about your event here'
 };
-const row = {
+var row = {
 };
-const message = {
+var message = {
   label: 'Message',
   placeholder: 'What are the details of your event?',
   type: 'textarea'
 };
-const FORM_INPUTS_DEFAULT = {
+var FORM_INPUTS_DEFAULT = {
   name,
   email,
   type,
@@ -70,15 +70,15 @@ const FORM_INPUTS_DEFAULT = {
   row,
   message
 };
-const BASE = [
+var BASE = [
   { id: 'name' },
   { id: 'email' }
 ];
-const MINI = [
+var MINI = [
   ...BASE,
   { id: 'message' }
 ];
-const FULL = [
+var FULL = [
   ...BASE,
   { id: 'type' },
   { id: 'eventDate' },

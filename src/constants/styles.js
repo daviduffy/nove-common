@@ -1,4 +1,4 @@
-const FORM_STYLES_DEFAULT = {
+var FORM_STYLES_DEFAULT = {
   borderStyle: 'full',
   borderColor: '#b3b3b3',
   drawerBackgroundColor: '#eeeeee',
@@ -14,7 +14,7 @@ const FORM_STYLES_DEFAULT = {
   width: '560px'
 };
 
-const FORM_BORDER_PRESETS = [
+var FORM_BORDER_PRESETS = [
   // these are all lowercased in the widget so these need to be doubled to prevent UPPERCASING in InputSelect
   ['full', 'full'],
   ['underline', 'underline'],
