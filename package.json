@@ -15,5 +15,6 @@
   "bugs": {
     "url": "https://github.com/daviduffy/nove-common/issues"
   },
-  "homepage": "https://github.com/daviduffy/nove-common#readme"
+  "homepage": "https://github.com/daviduffy/nove-common#readme",
+  "dependencies": {}
 }
