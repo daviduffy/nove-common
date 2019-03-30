@@ -1,45 +1,6 @@
 var { STATES } = require('./states.js');
 var { EVENT_TYPES_COMMON } = require('./eventTypes.js');
 
-var name = {
-  label: 'Name',
-  placeholder: 'Your name'
-};
-var email = {
-  label: 'Email',
-  placeholder: 'your@email.com',
-  type: 'email'
-};
-var type = {
-  label: 'Event Type',
-  placeholder: 'Choose an event type',
-  type: 'select',
-  options: EVENT_TYPES_COMMON
-};
-var eventDate = {
-  label: 'Event Date',
-  placeholder: 'On or around',
-  type: 'date'
-};
-var referralSource = {
-  label: 'Referral Source',
-  placeholder: 'Where did you hear about me?'
-};
-var eventVenue = {
-  label: 'Event Venue',
-  placeholder: 'Name of the venue'
-};
-var eventLocale = {
-  label: 'Event Location',
-  placeholder: 'Choose a state',
-  type: 'select',
-  options: STATES
-};
-var phone = {
-  label: 'Phone',
-  placeholder: '(###) ###-####',
-  type: 'phone',
-};
 var budget = {
   label: 'Estimated budget',
   placeholder: '$XXXX',
@@ -49,13 +10,53 @@ var drawer = {
   label: 'More Details',
   placeholder: 'Share more details about your event here'
 };
-var row = {
+var email = {
+  label: 'Email',
+  placeholder: 'your@email.com',
+  type: 'email'
+};
+var eventDate = {
+  label: 'Event Date',
+  placeholder: 'On or around',
+  type: 'date'
+};
+var eventLocale = {
+  label: 'Event Location',
+  placeholder: 'Choose a state',
+  type: 'select',
+  options: STATES
+};
+var eventVenue = {
+  label: 'Event Venue',
+  placeholder: 'Name of the venue'
+};
+var name = {
+  label: 'Name',
+  placeholder: 'Your name'
 };
 var message = {
   label: 'Message',
   placeholder: 'What are the details of your event?',
   type: 'textarea'
 };
+var phone = {
+  label: 'Phone',
+  placeholder: '(###) ###-####',
+  type: 'phone',
+};
+var referralSource = {
+  label: 'Referral Source',
+  placeholder: 'Where did you hear about me?'
+};
+var row = {
+};
+var type = {
+  label: 'Event Type',
+  placeholder: 'Choose an event type',
+  type: 'select',
+  options: EVENT_TYPES_COMMON
+};
+
 var FORM_INPUTS_DEFAULT = {
   name,
   email,
@@ -70,6 +71,7 @@ var FORM_INPUTS_DEFAULT = {
   row,
   message
 };
+
 var BASE = [
   { id: 'name' },
   { id: 'email' }
