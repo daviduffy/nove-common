@@ -56,6 +56,9 @@ var type = {
   type: 'select',
   options: EVENT_TYPES_COMMON
 };
+var submit = {
+  label: 'Submit'
+}
 
 var FORM_INPUTS_DEFAULT = {
   name,
@@ -69,19 +72,26 @@ var FORM_INPUTS_DEFAULT = {
   budget,
   drawer,
   row,
-  message
+  message,
+  submit
 };
 
-var BASE = [
+var PRIMITIVE = [
   { id: 'name' },
   { id: 'email' }
 ];
+
+var BASE = [
+  ...PRIMITIVE,
+  { id: 'submit' }
+];
 var MINI = [
-  ...BASE,
-  { id: 'message' }
+  ...PRIMITIVE,
+  { id: 'message' },
+  { id: 'submit' }
 ];
 var FULL = [
-  ...BASE,
+  ...PRIMITIVE,
   { id: 'type' },
   { id: 'eventDate' },
   { id: 'referralSource' },
@@ -92,7 +102,8 @@ var FULL = [
       { id: 'eventLocale' }
     ]
   },
-  { id: 'message' }
+  { id: 'message' },
+  { id: 'submit' }
 ];
 
 module.exports = {
