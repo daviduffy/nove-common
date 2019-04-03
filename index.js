@@ -5,6 +5,7 @@ var { EVENT_TYPES_COMMON, EVENT_TYPES_ALL } = require('./src/constants/eventType
 var { STATES } = require('./src/constants/states.js');
 var { FORM_STYLES_DEFAULT, FORM_BORDER_PRESETS } = require('./src/constants/styles.js');
 var { flattenInputs } = require('./src/utils/contactForms.js');
+var { throttle } = require('./src/utils/utils.js');
 
 module.exports = {
   EVENT_TYPES_ALL,
@@ -14,5 +15,6 @@ module.exports = {
   FORM_INPUTS_DEFAULT,
   FORM_ORDER,
   STATES,
-  flattenInputs
+  flattenInputs,
+  throttle
 };
